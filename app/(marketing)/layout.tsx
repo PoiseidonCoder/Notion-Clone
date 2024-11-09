@@ -1,9 +1,8 @@
-import React from 'react'
-import { Navbar } from './(_components)/navbar'
+import { Navbar } from './_components/navbar'
 
-export const MarketingLayout = ({ children }: { children: React.ReactNode }) => {
+const MarketingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className='h-full'>
+    <div className='h-full dark:bg-[#1F1F1F]'>
       <Navbar />
       <main className='h-full pt-40'>
         {children}
@@ -11,4 +10,5 @@ export const MarketingLayout = ({ children }: { children: React.ReactNode }) => 
     </div>
   )
 }
+export default MarketingLayout;
 
